@@ -11,7 +11,7 @@ const Showcase = ({
     <a
       href={url}
       target='_blank'
-      className='block outline outline-2 text-slate-800 hover:scale-105 transition-all duration-500 ease-in-out my-3 shadow-md p-3 rounded-md bg-teal-100 outline-teal-200'
+      className='block outline outline-2 sm:w-2/5 text-slate-800 hover:scale-105 transition-all duration-500 ease-in-out my-3 shadow-md p-3 rounded-md bg-teal-100 outline-teal-200'
     >
       <h1 className='font-bold text-teal-600 drop-shadow-lg text-lg'>
         {title}

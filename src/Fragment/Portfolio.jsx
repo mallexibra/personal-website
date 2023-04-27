@@ -28,16 +28,23 @@ const Portfolio = () => {
       url: "slkadnsakl.com",
       tech: ["ReactJS", "TailwindCSS"],
     },
+    {
+      title: "Todo App",
+      desc: "Sebuah website untuk to do list sederhana harian anda",
+      img: "/image.png",
+      url: "slkadnsakl.com",
+      tech: ["ReactJS", "TailwindCSS"],
+    },
   ];
   return (
-    <div className={`${tema ? "dark" : ""} scrollbar-hide`}>
+    <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
       <Navbar portfolio={true} />
       <Wrapper className='bg-gray-900 dark:bg-white min-h-screen'>
         <Title
           className='text-center text-white text-2xl p-4 dark:text-gray-900'
           text='PORTFOLIO PAGE'
         />
-        <Container className='bg-gradient-to-br from-white to-teal-200 min-h-screen flex flex-col justify-center py-2 px-10 rounded-t-3xl'>
+        <Container className='bg-gradient-to-br from-white to-teal-200 min-h-screen flex flex-col justify-center p-10 rounded-t-3xl'>
           <Title
             className='bg-teal-600 text-white text-2xl w-max px-3'
             text='My Portfolio'
@@ -45,17 +52,19 @@ const Portfolio = () => {
           <DescriptionPage className='text-slate-900 font-medium my-3'>
             Showcase of my project on website development{" "}
           </DescriptionPage>
-          {myProject.map((item) => {
-            return (
-              <Showcase
-                title={item.title}
-                description={item.desc}
-                img={item.img}
-                url={item.url}
-                tech={item.tech}
-              />
-            );
-          })}
+          <div className='flex gap-3 justify-around items-center flex-wrap'>
+            {myProject.map((item) => {
+              return (
+                <Showcase
+                  title={item.title}
+                  description={item.desc}
+                  img={item.img}
+                  url={item.url}
+                  tech={item.tech}
+                />
+              );
+            })}
+          </div>
         </Container>
       </Wrapper>
       <Footer />

@@ -21,7 +21,7 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [tema]);
   return (
-    <div className={`${tema ? "dark" : ""} scrollbar-hide`}>
+    <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
       <Navbar home={true} />
       <Wrapper className='dark:bg-gray-900 bg-white pb-10 min-h-screen flex items-center'>
         <Container>

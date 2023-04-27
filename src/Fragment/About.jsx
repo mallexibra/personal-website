@@ -39,7 +39,7 @@ const About = () => {
     return () => clearInterval(interval);
   }, [tema]);
   return (
-    <div className={`${tema ? "dark" : ""} scrollbar-hide`}>
+    <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
       <Navbar about={true} />
       <Wrapper className='bg-gray-900 dark:bg-white min-h-screen'>
         <Title
