@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import DescriptionPage from "../Components/DescriptionPage";
 import Skill from "../Components/Skill";
 import Title from "../Components/Title";
@@ -25,12 +26,24 @@ const About = () => {
     { name: "Inkscape", style: "gray" },
     { name: "Notion", style: "stone" },
   ];
+
+  const [tema, setTema] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const fromStorage = localStorage.getItem("theme");
+      if (fromStorage) {
+        setTema(fromStorage === "true");
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, [tema]);
   return (
-    <>
+    <div className={`${tema ? "dark" : ""} scrollbar-hide`}>
       <Navbar about={true} />
-      <Wrapper className='bg-gray-900 min-h-screen'>
+      <Wrapper className='bg-gray-900 dark:bg-white min-h-screen'>
         <Title
-          className='text-center text-white text-2xl p-4'
+          className='text-center text-white text-2xl p-4 dark:text-gray-900'
           text='ABOUT PAGE'
         />
         <Container className='bg-gradient-to-br from-white to-teal-200 min-h-screen flex flex-col justify-center py-2 px-10 rounded-t-3xl'>
@@ -81,7 +94,7 @@ const About = () => {
         </Container>
       </Wrapper>
       <Footer />
-    </>
+    </div>
   );
 };
 
