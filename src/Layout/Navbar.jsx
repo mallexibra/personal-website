@@ -19,7 +19,7 @@ const Navbar = ({
   blog = false,
 }) => {
   return (
-    <div className='w-full md:w-max md:right-3 bottom-3 flex justify-center fixed md:items-center md:h-screen'>
+    <div className='w-full md:w-max md:right-3 bottom-3 flex justify-center z-50 fixed md:items-center md:h-screen'>
       <nav className='rounded-lg bg-teal-600/80 backdrop-blur-sm md:h-max mx-auto text-white drop-shadow-xl items-center p-2 flex md:flex-col'>
         <div className='flex gap-2 text-base md:flex md:flex-col'>
           <NavLink active={home} url='/'>

@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className={`${tema ? "dark" : ""} scrollbar-hide`}>
       <Navbar home={true} />
-      <Wrapper className='dark:bg-gray-900 bg-white min-h-screen flex items-center'>
+      <Wrapper className='dark:bg-gray-900 bg-white pb-10 min-h-screen flex items-center'>
         <Container>
           <Person>
             <Passion />

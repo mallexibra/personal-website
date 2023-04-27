@@ -4,7 +4,6 @@ import About from "./Fragment/About";
 import Portfolio from "./Fragment/Portfolio";
 import Contact from "./Fragment/Contact";
 import Blog from "./Fragment/Blog";
-import Navbar from "./Layout/Navbar";
 
 const router = createBrowserRouter([
   {
