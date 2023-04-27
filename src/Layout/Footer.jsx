@@ -40,7 +40,7 @@ const Footer = () => {
             const child = item.children;
             return (
               <div className=' w-full text-center sm:text-left sm:w-1/2'>
-                <div className=' sm:w-full w-max mx-auto'>
+                <div className=' w-full mx-auto'>
                   <Title key={item.id} text={item.title} className='my-2' />
                   <div className='grid grid-cols-2 gap-x-12'>
                     {child.map((it) => {
