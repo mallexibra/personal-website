@@ -3,8 +3,10 @@ import Button from "../Components/Button";
 import Description from "../Components/Description";
 import Person from "../Components/Person";
 import Navbar from "../Layout/Navbar";
-import Container from "./Container";
+import Container from "../Layout/Container";
 import Passion from "../Components/Passion";
+import Footer from "../Layout/Footer";
+import Wrapper from "../Layout/Wrapper";
 
 const Home = () => {
   const [tema, setTema] = useState(false);
@@ -19,20 +21,26 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [tema]);
   return (
-    <div className={tema ? "dark" : ""}>
+    <div className={`${tema ? "dark" : ""} scrollbar-hide`}>
       <Navbar home={true} />
-      <Container className='dark:bg-gray-900 bg-white min h-screen'>
-        <Person>
-          <Passion />
-        </Person>
-        <Description />
-        <Button primary={false} url={"https://www.youtube.com/@mallexibra/"}>
-          Get In Touch
-        </Button>
-        <Button primary={true} url={"https://www.linkedin.com/in/mallexibra/"}>
-          Hire Me Now
-        </Button>
-      </Container>
+      <Wrapper className='dark:bg-gray-900 bg-white'>
+        <Container className='min-h-screen'>
+          <Person>
+            <Passion />
+          </Person>
+          <Description />
+          <Button primary={false} url={"https://www.youtube.com/@mallexibra/"}>
+            Get In Touch
+          </Button>
+          <Button
+            primary={true}
+            url={"https://www.linkedin.com/in/mallexibra/"}
+          >
+            Hire Me Now
+          </Button>
+        </Container>
+      </Wrapper>
+      <Footer />
     </div>
   );
 };

@@ -20,7 +20,7 @@ const Navbar = ({
 }) => {
   return (
     <div className='w-full md:w-max md:right-3 bottom-3 flex justify-center fixed md:items-center md:h-screen'>
-      <nav className='rounded-lg bg-teal-600/90 backdrop-blur-sm md:h-max mx-auto text-white drop-shadow-xl items-center p-2 flex md:flex-col'>
+      <nav className='rounded-lg bg-teal-600/80 backdrop-blur-sm md:h-max mx-auto text-white drop-shadow-xl items-center p-2 flex md:flex-col'>
         <div className='flex gap-2 text-base md:flex md:flex-col'>
           <NavLink active={home} url='/'>
             <ImHome />{" "}
@@ -38,7 +38,7 @@ const Navbar = ({
             <BsBookHalf />{" "}
           </NavLink>
           <Theme
-            className='mr-2'
+            className='mr-2 md:mx-auto'
             light={<BsMoonStarsFill />}
             dark={<BsBrightnessHighFill />}
           />

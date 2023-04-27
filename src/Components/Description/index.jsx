@@ -1,9 +1,10 @@
 const Description = () => {
   return (
     <>
-      <h3 className='dark:text-white text-slate-900 m-4  break-words font-extrabold text-3xl text-center'>
+      <h3 className='dark:text-white text-slate-900 m-4 leading-relaxed  break-words font-extrabold text-3xl text-center'>
         "Passionate About Crafting Amazing{" "}
-        <span className='bg-teal-600'>Designs and Website</span>".
+        <span className='bg-teal-600 text-white px-2'>Designs and Website</span>
+        ".
       </h3>
       <p className='text-center text-slate-900 dark:text-white mb-8'>
         Design Beautiful | Coding Powerfull
