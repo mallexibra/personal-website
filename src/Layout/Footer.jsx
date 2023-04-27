@@ -1,69 +1,68 @@
 import FooterLink from "../Components/FooterLink";
-import Title from "../Components/Title";
 import Container from "./Container";
 import Wrapper from "./Wrapper";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   const link = [
-    {
-      id: 1,
-      title: "Hello World",
-      children: [
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-      ],
-    },
-    {
-      id: 1,
-      title: "Hello World",
-      children: [
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-        { name: "Google", url: "www.google.com" },
-      ],
-    },
+    { name: "Website", url: "https://website-five-cyan-50.vercel.app/" },
+    { name: "Youtube", url: "https://www.youtube.com/@mallexibra/" },
+    { name: "Github", url: "https://github.com/mallexibra/" },
+    { name: "Instagram", url: "https://www.instagram.com/mallexibra/" },
+    { name: "Tiktok", url: "https://www.tiktok.com/@mallexibra" },
+    { name: "Linkedin", url: "https://www.linkedin.com/in/mallexibra/" },
   ];
   return (
     <Wrapper className='bg-teal-600'>
-      <Container className='text-white p-10'>
-        <div className='flex justify-between items-start flex-wrap gap-4 sm:gap-0'>
-          {link.map((item) => {
-            const child = item.children;
-            return (
-              <div className=' w-full text-center sm:text-left sm:w-1/2'>
-                <div className=' w-full mx-auto'>
-                  <Title key={item.id} text={item.title} className='my-2' />
-                  <div className='grid grid-cols-2 gap-x-12'>
-                    {child.map((it) => {
-                      return (
-                        <FooterLink
-                          url={it.url}
-                          className='hover:font-semibold hover:text-teal-100 transition-all duration-300'
-                        >
-                          {it.name}
-                        </FooterLink>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            );
+      <Container className='text-white pt-10 px-10 pb-20'>
+        <div className='flex justify-between items-center flex-wrap gap-2 text-sm'>
+          {link.map(({ url, name }) => {
+            return <FooterLink url={url}>{name}</FooterLink>;
           })}
         </div>
         <hr className='my-4 opacity-50' />
-        <h1>
-          Copyright &copy; by{" "}
-          <span className='text-lg font-bold'>MAULANA MALIK IBRAHIM</span>
-        </h1>
+        <div className='text-xs text-center'>
+          <p>
+            Made using{" "}
+            <a
+              href='https://react.dev/'
+              target='_blank'
+              className='text-slate-800 font-semibold cursor-pointer'
+            >
+              React JS
+            </a>{" "}
+            &{" "}
+            <a
+              href='https://tailwindcss.com/'
+              target='_blank'
+              className='text-slate-800 font-semibold cursor-pointer'
+            >
+              TailwindCSS
+            </a>
+            . Hosted on{" "}
+            <a
+              href='https://vercel.com/'
+              target='_blank'
+              className='text-slate-800 font-semibold cursor-pointer'
+            >
+              Vercel
+            </a>
+            .
+          </p>
+          <p>&copy; Maulana Malik Ibrahim 2023.</p>
+          <div className='text-xl flex justify-center items-center gap-2 my-3'>
+            <a href='https://github.com/mallexibra/' target='_blank'>
+              <FaGithubSquare />
+            </a>
+            <a href='https://www.linkedin.com/in/mallexibra/' target='_blank'>
+              <FaLinkedin />
+            </a>
+            <a href='mailto:mallexibra@gmail.com' target='_blank'>
+              <MdOutlineEmail />
+            </a>
+          </div>
+        </div>
       </Container>
     </Wrapper>
   );
