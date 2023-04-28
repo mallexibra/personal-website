@@ -41,12 +41,12 @@ const About = () => {
   return (
     <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
       <Navbar about={true} />
-      <Wrapper className='bg-gray-900 dark:bg-white min-h-screen'>
+      <Wrapper className='dark:bg-gray-900 bg-white min-h-screen'>
         <Title
-          className='text-center text-white text-2xl p-4 dark:text-gray-900'
+          className='text-center dark:text-white text-2xl p-4 text-gray-900'
           text='ABOUT PAGE'
         />
-        <Container className='bg-gradient-to-br from-white to-teal-200 min-h-screen flex flex-col justify-center py-2 px-10 rounded-t-3xl'>
+        <Container className='bg-gradient-to-br from-slate-100 to-teal-200 dark:from-white dark:to-teal-200 min-h-screen flex flex-col justify-center py-2 px-10 rounded-t-3xl'>
           <Title
             className='text-white bg-teal-600 w-max text-2xl px-2 my-4'
             text="Hi, I'm Maulana Malik Ibrahim"

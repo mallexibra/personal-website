@@ -39,12 +39,12 @@ const Portfolio = () => {
   return (
     <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
       <Navbar portfolio={true} />
-      <Wrapper className='bg-gray-900 dark:bg-white min-h-screen'>
+      <Wrapper className='dark:bg-gray-900 bg-white min-h-screen'>
         <Title
-          className='text-center text-white text-2xl p-4 dark:text-gray-900'
+          className='text-center dark:text-white text-2xl p-4 text-gray-900'
           text='PORTFOLIO PAGE'
         />
-        <Container className='bg-gradient-to-br from-white to-teal-200 min-h-screen flex flex-col justify-center p-10 rounded-t-3xl'>
+        <Container className='bg-gradient-to-br from-slate-100 dark:from-white dark:to-teal-200 to-teal-200 min-h-screen flex flex-col justify-center p-10 rounded-t-3xl'>
           <Title
             className='bg-teal-600 text-white text-2xl w-max px-3'
             text='My Portfolio'
