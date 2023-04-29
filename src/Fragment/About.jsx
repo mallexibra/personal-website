@@ -46,9 +46,9 @@ const About = () => {
           className='text-center dark:text-white text-2xl p-4 text-gray-900'
           text='ABOUT PAGE'
         />
-        <Container className='bg-gradient-to-br from-slate-100 to-teal-200 dark:from-white dark:to-teal-200 min-h-screen flex flex-col justify-center py-2 px-10 rounded-t-3xl'>
+        <Container className='bg-gradient-to-br from-slate-100  to-teal-200 dark:from-white dark:to-teal-200 min-h-screen flex flex-col justify-center py-2 px-10 rounded-t-3xl'>
           <Title
-            className='text-white bg-teal-600 w-max text-2xl px-2 my-4'
+            className='text-white bg-teal-600 max-w-max text-2xl px-2 my-4'
             text="Hi, I'm Maulana Malik Ibrahim"
           />
           <DescriptionPage className='leading-relaxed text-slate-900 font-medium'>

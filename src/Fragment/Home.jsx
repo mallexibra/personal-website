@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Button from "../Components/Button";
 import Description from "../Components/Description";
 import Person from "../Components/Person";
 import Navbar from "../Layout/Navbar";
@@ -7,6 +6,7 @@ import Container from "../Layout/Container";
 import Passion from "../Components/Passion";
 import Footer from "../Layout/Footer";
 import Wrapper from "../Layout/Wrapper";
+import ButtonLink from "../Components/ButtonLink";
 
 const Home = () => {
   const [tema, setTema] = useState(false);
@@ -29,15 +29,18 @@ const Home = () => {
             <Passion />
           </Person>
           <Description />
-          <Button primary={false} url={"https://www.youtube.com/@mallexibra/"}>
+          <ButtonLink
+            primary={false}
+            url={"https://www.youtube.com/@mallexibra/"}
+          >
             Get In Touch
-          </Button>
-          <Button
+          </ButtonLink>
+          <ButtonLink
             primary={true}
             url={"https://www.linkedin.com/in/mallexibra/"}
           >
             Hire Me Now
-          </Button>
+          </ButtonLink>
         </Container>
       </Wrapper>
       <Footer />

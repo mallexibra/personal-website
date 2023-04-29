@@ -9,6 +9,7 @@ import CardContact from "../Components/CardContact";
 import { SiGmail } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
+import FormContact from "../Layout/FormContact";
 
 const Contact = () => {
   const [tema, setTema] = useState(false);
@@ -52,6 +53,7 @@ const Contact = () => {
               url='https://wa.me/6283857671574'
             />
           </div>
+          <FormContact />
         </Container>
       </Wrapper>
       <Footer />
