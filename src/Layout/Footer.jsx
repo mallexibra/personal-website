@@ -6,19 +6,23 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
   const link = [
-    { name: "Website", url: "https://website-five-cyan-50.vercel.app/" },
-    { name: "Youtube", url: "https://www.youtube.com/@mallexibra/" },
-    { name: "Github", url: "https://github.com/mallexibra/" },
-    { name: "Instagram", url: "https://www.instagram.com/mallexibra/" },
-    { name: "Tiktok", url: "https://www.tiktok.com/@mallexibra" },
-    { name: "Linkedin", url: "https://www.linkedin.com/in/mallexibra/" },
+    { id: 1, name: "Website", url: "https://website-five-cyan-50.vercel.app/" },
+    { id: 2, name: "Youtube", url: "https://www.youtube.com/@mallexibra/" },
+    { id: 3, name: "Github", url: "https://github.com/mallexibra/" },
+    { id: 4, name: "Instagram", url: "https://www.instagram.com/mallexibra/" },
+    { id: 5, name: "Tiktok", url: "https://www.tiktok.com/@mallexibra" },
+    { id: 6, name: "Linkedin", url: "https://www.linkedin.com/in/mallexibra/" },
   ];
   return (
     <Wrapper className='bg-teal-600'>
       <Container className='text-white pt-10 px-10 pb-20'>
-        <div className='flex justify-between items-center flex-wrap gap-2 text-sm'>
-          {link.map(({ url, name }) => {
-            return <FooterLink url={url}>{name}</FooterLink>;
+        <div className='flex justify-center flex-wrap gap-4 text-sm'>
+          {link.map(({ id, url, name }) => {
+            return (
+              <FooterLink key={id} url={url}>
+                {name}
+              </FooterLink>
+            );
           })}
         </div>
         <hr className='my-4 opacity-50' />

@@ -37,7 +37,8 @@ const Contact = () => {
             text='Contact Me'
           />
           <DescriptionPage className='leading-relaxed text-slate-900 font-medium'>
-            You can call me with account in bottom
+            You can contact me via the cardlink below or send feedback via the
+            form provided
           </DescriptionPage>
           <div className='mt-10 mb-3 flex justify-center items-center gap-3'>
             <CardContact

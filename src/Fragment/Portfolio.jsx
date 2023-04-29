@@ -50,7 +50,7 @@ const Portfolio = () => {
             text='My Portfolio'
           />
           <DescriptionPage className='text-slate-900 font-medium my-3'>
-            Showcase of my project on website development{" "}
+            The following is a portfolio of projects that I have worked on
           </DescriptionPage>
           <div className='flex gap-3 justify-around items-center flex-wrap'>
             {myProject.map((item) => {
