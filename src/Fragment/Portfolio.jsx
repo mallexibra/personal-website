@@ -44,7 +44,7 @@ const Portfolio = () => {
           className='text-center dark:text-white text-2xl p-4 text-gray-900'
           text='PORTFOLIO PAGE'
         />
-        <Container className='bg-gradient-to-br from-slate-100 dark:from-white dark:to-teal-200 to-teal-200 min-h-screen flex flex-col justify-center p-10 rounded-t-3xl'>
+        <Container className='bg-gradient-to-br from-slate-100 dark:from-white dark:to-teal-200 to-teal-200 min-h-screen flex flex-col p-10 rounded-t-3xl'>
           <Title
             className='bg-teal-600 text-white text-2xl w-max px-3'
             text='My Portfolio'

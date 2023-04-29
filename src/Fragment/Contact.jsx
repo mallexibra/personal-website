@@ -31,7 +31,7 @@ const Contact = () => {
           className='text-center dark:text-white text-2xl p-4 text-gray-900'
           text='CONTACT PAGE'
         />
-        <Container className='bg-gradient-to-br from-slate-100 dark:from-white dark:to-teal-200 to-teal-200 min-h-screen flex flex-col justify-center py-2 px-10 rounded-t-3xl'>
+        <Container className=' bg-gradient-to-br from-slate-100 dark:from-white dark:to-teal-200 to-teal-200 min-h-screen flex flex-col py-4 px-10 rounded-t-3xl'>
           <Title
             className='text-white bg-teal-600 w-max text-2xl px-2 my-4'
             text='Contact Me'
