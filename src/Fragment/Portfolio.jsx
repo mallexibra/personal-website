@@ -22,17 +22,39 @@ const Portfolio = () => {
 
   const myProject = [
     {
-      title: "Todo App",
-      desc: "Sebuah website untuk to do list sederhana harian anda",
-      img: "/image.png",
-      url: "slkadnsakl.com",
-      tech: ["ReactJS", "TailwindCSS"],
+      title: "Website Personal",
+      desc: "Website personal untuk Branding saya sendiri",
+      img: "/website-personal.png",
+      url: "https://website-five-cyan-50.vercel.app/",
+      tech: ["ReactJS", "TailwindCSS", "Web Storage"],
+    },
+    {
+      title: "PUTI Online",
+      desc: "PUTI Online Is a service for informatics engineering students to be able to submit complaints about matters in accordance with the categories on this website.",
+      img: "/puti-online.png",
+      url: "https://mallexibra.github.io/PUTIOnline/",
+      tech: ["HTML", "SCSS"],
+    },
+
+    {
+      title: "Website Portfolio",
+      desc: "Website Portfolio untuk Branding saya sendiri",
+      img: "/mallexibra-website.png",
+      url: "https://mallexibra.github.io/mallexibra-website/",
+      tech: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      title: "Bookshelf Apps",
+      desc: "Website ini merupakan Tugas akhir dari kelas Belajar Membuat Front-end pemula dari Dicoding.com",
+      img: "/bookshelf.png",
+      url: "https://mallexibra.github.io/bookshelfApps/",
+      tech: ["HTML", "CSS", "JavaScript", "Web Storage"],
     },
     {
       title: "Todo App",
       desc: "Sebuah website untuk to do list sederhana harian anda",
       img: "/image.png",
-      url: "slkadnsakl.com",
+      url: "https://todo-app-pearl-tau.vercel.app/",
       tech: ["ReactJS", "TailwindCSS"],
     },
   ];
