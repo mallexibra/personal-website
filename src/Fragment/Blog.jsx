@@ -47,7 +47,7 @@ const Blog = () => {
   ];
   return (
     <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
-      <Navbar blog={true}/>
+      <Navbar blog={true} />
       <Wrapper className='dark:bg-gray-900 bg-white min-h-screen'>
         <Title
           className='text-center dark:text-white text-2xl p-4 text-gray-900'

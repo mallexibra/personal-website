@@ -23,7 +23,7 @@ const Portfolio = () => {
   const myProject = [
     {
       title: "Website Personal",
-      desc: "Website personal untuk Branding saya sendiri",
+      desc: "A modern portfolio website from me to introduce my expertise",
       img: "/website-personal.png",
       url: "https://website-five-cyan-50.vercel.app/",
       tech: ["ReactJS", "TailwindCSS", "Web Storage"],
@@ -45,14 +45,14 @@ const Portfolio = () => {
     },
     {
       title: "Bookshelf Apps",
-      desc: "Website ini merupakan Tugas akhir dari kelas Belajar Membuat Front-end pemula dari Dicoding.com",
+      desc: "Bookshelf is the final project of a Belajar Membuat Front-End Web untuk Pemula from Dicoding.com",
       img: "/bookshelf.png",
       url: "https://mallexibra.github.io/bookshelfApps/",
       tech: ["HTML", "CSS", "JavaScript", "Web Storage"],
     },
     {
       title: "Todo App",
-      desc: "Sebuah website untuk to do list sederhana harian anda",
+      desc: "Todo App is a website that can be used to create your todo list.",
       img: "/image.png",
       url: "https://todo-app-pearl-tau.vercel.app/",
       tech: ["ReactJS", "TailwindCSS"],
