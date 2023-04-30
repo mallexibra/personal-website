@@ -1,6 +1,6 @@
 const CardBlog = ({ title, description, src }) => {
   return (
-    <div className='w-full ring-1 ring-teal-600 p-3 bg-white md:w-72 rounded-md shadow-md'>
+    <div className='w-full ring-1 ring-teal-600 p-3 bg-white md:w-72 rounded-md drop-shadow-lg'>
       <iframe
         src={src}
         title='YouTube video player'

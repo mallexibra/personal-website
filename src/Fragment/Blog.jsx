@@ -61,7 +61,7 @@ const Blog = () => {
           <DescriptionPage className='leading-relaxed text-slate-900 font-medium'>
             You can see some of my blogs or journals on the cards below
           </DescriptionPage>
-          <div className='my-10 flex gap-2 flex-wrap justify-center w-full '>
+          <div className='my-10 flex gap-4 flex-wrap justify-center w-full '>
             {journal.map((item) => {
               return (
                 <CardBlog
