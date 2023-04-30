@@ -7,6 +7,7 @@ const Showcase = ({
   tech,
   url,
 }) => {
+  let id = 1;
   return (
     <a
       href={url}
@@ -20,6 +21,7 @@ const Showcase = ({
         {tech.map((item) => {
           return (
             <Skill
+              key={id++}
               className='bg-teal-300/50 outline-teal-400'
               text='text-teal-600 font-semibold'
             >

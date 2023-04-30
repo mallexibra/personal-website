@@ -6,6 +6,7 @@ import Title from "../Components/Title";
 import Footer from "../Layout/Footer";
 import DescriptionPage from "../Components/DescriptionPage";
 import Showcase from "../Components/Showcase";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [tema, setTema] = useState(false);
@@ -22,6 +23,7 @@ const Portfolio = () => {
 
   const myProject = [
     {
+      id: 1,
       title: "Website Personal",
       desc: "A modern portfolio website from me to introduce my expertise",
       img: "/website-personal.png",
@@ -29,6 +31,7 @@ const Portfolio = () => {
       tech: ["ReactJS", "TailwindCSS", "Web Storage"],
     },
     {
+      id: 2,
       title: "PUTI Online",
       desc: "PUTI Online Is a service for informatics engineering students to be able to submit complaints about matters in accordance with the categories on this website.",
       img: "/puti-online.png",
@@ -37,6 +40,7 @@ const Portfolio = () => {
     },
 
     {
+      id: 3,
       title: "Website Portfolio",
       desc: "Website Portfolio untuk Branding saya sendiri",
       img: "/mallexibra-website.png",
@@ -44,6 +48,7 @@ const Portfolio = () => {
       tech: ["HTML", "CSS", "JavaScript"],
     },
     {
+      id: 4,
       title: "Bookshelf Apps",
       desc: "Bookshelf is the final project of a Belajar Membuat Front-End Web untuk Pemula from Dicoding.com",
       img: "/bookshelf.png",
@@ -51,6 +56,7 @@ const Portfolio = () => {
       tech: ["HTML", "CSS", "JavaScript", "Web Storage"],
     },
     {
+      id: 5,
       title: "Todo App",
       desc: "Todo App is a website that can be used to create your todo list.",
       img: "/image.png",
@@ -78,6 +84,7 @@ const Portfolio = () => {
             {myProject.map((item) => {
               return (
                 <Showcase
+                  key={item.id}
                   title={item.title}
                   description={item.desc}
                   img={item.img}

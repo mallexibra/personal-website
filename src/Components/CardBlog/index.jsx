@@ -4,7 +4,6 @@ const CardBlog = ({ title, description, src }) => {
       <iframe
         src={src}
         title='YouTube video player'
-        frameborder='0'
         terima='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         className='w-full h-40 rounded-md'
       ></iframe>
