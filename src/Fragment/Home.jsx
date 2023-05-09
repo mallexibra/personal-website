@@ -10,7 +10,6 @@ import ButtonLink from "../Components/ButtonLink";
 
 const Home = () => {
   const [tema, setTema] = useState(false);
-
   useEffect(() => {
     const interval = setInterval(() => {
       const fromStorage = localStorage.getItem("theme");

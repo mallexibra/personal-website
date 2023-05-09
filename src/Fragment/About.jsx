@@ -9,22 +9,22 @@ import Wrapper from "../Layout/Wrapper";
 
 const About = () => {
   const mySkill = [
-    { name: "HTML5", style: "orange" },
-    { name: "CSS3", style: "sky" },
-    { name: "SCSS", style: "rose" },
-    { name: "JavaScript", style: "yellow" },
-    { name: "PHP", style: "indigo" },
-    { name: "MySQL", style: "orange" },
-    { name: "ReactJS", style: "cyan" },
-    { name: "TailwindCSS", style: "blue" },
-    { name: "Bootsrap", style: "pink" },
-    { name: "NodeJS", style: "green" },
-    { name: "VSCode", style: "sky" },
-    { name: "Github", style: "slate" },
-    { name: "Linux", style: "amber" },
-    { name: "Figma", style: "red" },
-    { name: "Inkscape", style: "gray" },
-    { name: "Notion", style: "stone" },
+    { id: 1, name: "HTML5" },
+    { id: 2, name: "CSS3" },
+    { id: 3, name: "SCSS" },
+    { id: 4, name: "JavaScript" },
+    { id: 5, name: "PHP" },
+    { id: 6, name: "MySQL" },
+    { id: 7, name: "ReactJS" },
+    { id: 8, name: "TailwindCSS" },
+    { id: 9, name: "Bootsrap" },
+    { id: 10, name: "NodeJS" },
+    { id: 11, name: "VSCode" },
+    { id: 12, name: "Github" },
+    { id: 13, name: "Linux" },
+    { id: 14, name: "Figma" },
+    { id: 15, name: "Inkscape" },
+    { id: 16, name: "Notion" },
   ];
 
   const [tema, setTema] = useState(false);
@@ -65,10 +65,11 @@ const About = () => {
             text='Skill for Work'
           />
           <DescriptionPage className='flex flex-wrap gap-2'>
-            {mySkill.map(({ name, style }) => {
+            {mySkill.map(({ name, id }) => {
               return (
                 <Skill
-                  className={`bg-${style}-600 outline-${style}-400 font-medium`}
+                  key={id}
+                  className={`bg-slate-500 border-2 border-slate-600 font-medium`}
                 >
                   {name}
                 </Skill>
