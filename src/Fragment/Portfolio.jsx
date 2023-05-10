@@ -38,11 +38,10 @@ const Portfolio = () => {
       url: "https://mallexibra.github.io/PUTIOnline/",
       tech: ["HTML", "SCSS"],
     },
-
     {
       id: 3,
       title: "Website Portfolio",
-      desc: "Website Portfolio untuk Branding saya sendiri",
+      desc: "Portfolio Website for my own Branding",
       img: "/mallexibra-website.png",
       url: "https://mallexibra.github.io/mallexibra-website/",
       tech: ["HTML", "CSS", "JavaScript"],

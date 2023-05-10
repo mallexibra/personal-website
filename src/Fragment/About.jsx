@@ -6,6 +6,7 @@ import Container from "../Layout/Container";
 import Footer from "../Layout/Footer";
 import Navbar from "../Layout/Navbar";
 import Wrapper from "../Layout/Wrapper";
+import Journey from "../Layout/Journey";
 
 const About = () => {
   const mySkill = [
@@ -25,6 +26,42 @@ const About = () => {
     { id: 14, name: "Figma" },
     { id: 15, name: "Inkscape" },
     { id: 16, name: "Notion" },
+  ];
+
+  const school = [
+    {
+      id: 1,
+      name: "POLITEKNIK NEGERI BANYUWANGI",
+      desc: "D4 Teknologi Rekayasa Perangkat Lunak",
+      year: "2022 - present",
+    },
+    {
+      id: 2,
+      name: "SMK NEGERI KALIBARU",
+      desc: "Teknik Komputer dan Jaringan",
+      year: "2019 - 2022",
+    },
+  ];
+
+  const experience = [
+    {
+      id: 1,
+      name: "PKL Desain Grafis",
+      desc: "Variant Printing & Offset",
+      year: "2020 - 2021",
+    },
+    {
+      id: 2,
+      name: "Ketua MPK",
+      desc: "SMK Negeri Kalibaru",
+      year: "2020 - 2021",
+    },
+    {
+      id: 3,
+      name: "Ketua OSIS",
+      desc: "SMK Negeri Kalibaru",
+      year: "2019 - 2020",
+    },
   ];
 
   const [tema, setTema] = useState(false);
@@ -69,7 +106,7 @@ const About = () => {
               return (
                 <Skill
                   key={id}
-                  className={`bg-slate-500 border-2 border-slate-600 font-medium`}
+                  className={`bg-teal-500 border-2 outline-none border-teal-600 font-medium`}
                 >
                   {name}
                 </Skill>
@@ -91,6 +128,30 @@ const About = () => {
             >
               Docker Container
             </Skill>
+          </DescriptionPage>
+          <Title
+            className='pt-10 pb-3 text-teal-600 drop-shadow-md'
+            text='Education Trail'
+          />
+          <DescriptionPage>
+            <div className='flex flex-col gap-y-3 relative justify-center'>
+              <span className='block absolute w-1 h-[70%] bg-teal-300 left-2'></span>
+              {school.map(({ id, name, desc, year }) => {
+                return <Journey key={id} name={name} desc={desc} year={year} />;
+              })}
+            </div>
+          </DescriptionPage>
+          <Title
+            className='pt-10 pb-3 text-teal-600 drop-shadow-md'
+            text='Experience'
+          />
+          <DescriptionPage>
+            <div className='flex flex-col gap-y-3 relative justify-center'>
+              <span className='block absolute w-1 h-[70%] bg-teal-300 left-2'></span>
+              {experience.map(({ id, name, desc, year }) => {
+                return <Journey key={id} name={name} desc={desc} year={year} />;
+              })}
+            </div>
           </DescriptionPage>
         </Container>
       </Wrapper>

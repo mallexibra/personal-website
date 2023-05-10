@@ -4,6 +4,7 @@ import FormInput from "../Components/FormInput";
 import FormLabel from "../Components/FormLabel";
 import FormTextarea from "../Components/FormTextarea";
 import React, { useState } from "react";
+import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -14,7 +15,16 @@ const FormContact = () => {
   });
   const handleForm = async (e) => {
     e.preventDefault();
-    toast.success("Feedback has been sent successfully");
+    axios
+      .post("/contact/send-email", feed)
+      .then((response) => {
+        toast.success("Feedback has been sent successfully");
+        console.log(response.data);
+      })
+      .catch((error) => {
+        toast.warning("Something went wrong!");
+        console.error(error);
+      });
     console.log(feed);
   };
 
