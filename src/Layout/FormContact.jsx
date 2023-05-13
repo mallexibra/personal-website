@@ -3,29 +3,35 @@ import FormContainer from "../Components/FormContainer";
 import FormInput from "../Components/FormInput";
 import FormLabel from "../Components/FormLabel";
 import FormTextarea from "../Components/FormTextarea";
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const FormContact = () => {
-  const [feed, setFeed] = useState({
-    email: "",
-    feedback: "",
-  });
-  const handleForm = async (e) => {
+  const [feed, setFeed] = useState({});
+  const form = useRef();
+  const handleForm = (e) => {
     e.preventDefault();
-    axios
-      .post("/contact/send-email", feed)
-      .then((response) => {
-        toast.success("Feedback has been sent successfully");
-        console.log(response.data);
-      })
-      .catch((error) => {
-        toast.warning("Something went wrong!");
-        console.error(error);
-      });
-    console.log(feed);
+
+    emailjs
+      .sendForm(
+        "service_ttubcmf",
+        "template_1tmbq69",
+        form.current,
+        "-NGYANhsVQMdF28SI"
+      )
+      .then(
+        (result) => {
+          toast.success("Feedback has been sent successfully");
+          console.log(result.text);
+        },
+        (error) => {
+          toast.warning("Something went wrong!");
+          console.log(error.text);
+        }
+      );
+    // console.log(feed);
   };
 
   const handleChangeInput = (e) => {
@@ -34,13 +40,24 @@ const FormContact = () => {
   };
 
   return (
-    <form onSubmit={(e) => handleForm(e)}>
+    <form ref={form} onSubmit={(e) => handleForm(e)}>
       <FormContainer>
+        <FormLabel text='Name' id='name'>
+          <FormInput
+            id='name'
+            type='text'
+            name='to_name'
+            placeholder='Input your name...'
+            change={(e) => {
+              handleChangeInput(e);
+            }}
+          />
+        </FormLabel>
         <FormLabel text='Email' id='email'>
           <FormInput
             id='email'
             type='email'
-            name='email'
+            name='from_name'
             placeholder='Input your email...'
             change={(e) => {
               handleChangeInput(e);
@@ -52,7 +69,7 @@ const FormContact = () => {
         <FormLabel text='Feedback' id='feedback'>
           <FormTextarea
             id='feedback'
-            name='feedback'
+            name='message'
             change={(e) => {
               handleChangeInput(e);
             }}

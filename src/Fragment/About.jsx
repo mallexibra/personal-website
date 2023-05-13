@@ -123,11 +123,6 @@ const About = () => {
             >
               ReactJS
             </Skill>
-            <Skill
-              className={`bg-blue-600 outline-blue-400 font-medium animate-pulse`}
-            >
-              Docker Container
-            </Skill>
           </DescriptionPage>
           <Title
             className='pt-10 pb-3 text-teal-600 drop-shadow-md'
@@ -147,7 +142,7 @@ const About = () => {
           />
           <DescriptionPage>
             <div className='flex flex-col gap-y-3 relative justify-center'>
-              <span className='block absolute w-1 h-[70%] bg-teal-300 left-2'></span>
+              <span className='block absolute w-1 h-[68%] bg-teal-300 left-2'></span>
               {experience.map(({ id, name, desc, year }) => {
                 return <Journey key={id} name={name} desc={desc} year={year} />;
               })}

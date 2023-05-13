@@ -5,9 +5,12 @@ const Journey = ({ name, desc, year }) => {
         <span className='block w-3 h-3 bg-teal-300 rounded-full'></span>
       </span>
       <div className='text-slate-900'>
-        <h1 className='font-bold'>{name}</h1>
-        <p className='inline-block text-xs opacity-50 mr-2'>{year}</p>
-        <p className='inline-block text-xs font-semibold'>{desc}</p>
+        <h1 className='font-bold leading-relaxed'>{name}</h1>
+        <div>
+          <p className='inline-block text-xs opacity-50 mr-2  leading-relaxed'>
+            {year} <span className='font-semibold'>{desc}</span>
+          </p>
+        </div>
       </div>
     </div>
   );

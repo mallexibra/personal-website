@@ -6,7 +6,6 @@ import Title from "../Components/Title";
 import Footer from "../Layout/Footer";
 import DescriptionPage from "../Components/DescriptionPage";
 import Showcase from "../Components/Showcase";
-import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [tema, setTema] = useState(false);
@@ -63,6 +62,7 @@ const Portfolio = () => {
       tech: ["ReactJS", "TailwindCSS"],
     },
   ];
+
   return (
     <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
       <Navbar portfolio={true} />

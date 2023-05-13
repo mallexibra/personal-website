@@ -32,7 +32,7 @@ const Footer = () => {
             <a
               href='https://react.dev/'
               target='_blank'
-              className='text-slate-800 font-semibold cursor-pointer'
+              className=' font-semibold cursor-pointer'
             >
               React JS
             </a>{" "}
@@ -40,7 +40,7 @@ const Footer = () => {
             <a
               href='https://tailwindcss.com/'
               target='_blank'
-              className='text-slate-800 font-semibold cursor-pointer'
+              className=' font-semibold cursor-pointer'
             >
               TailwindCSS
             </a>
@@ -48,7 +48,7 @@ const Footer = () => {
             <a
               href='https://vercel.com/'
               target='_blank'
-              className='text-slate-800 font-semibold cursor-pointer'
+              className=' font-semibold cursor-pointer'
             >
               Vercel
             </a>
