@@ -6,9 +6,11 @@ import Title from "../Components/Title";
 import Footer from "../Layout/Footer";
 import DescriptionPage from "../Components/DescriptionPage";
 import Showcase from "../Components/Showcase";
+import { Link, Outlet } from "react-router-dom";
 
 const Portfolio = () => {
   const [tema, setTema] = useState(false);
+  const [pathName, setPathName] = useState(window.location.pathname);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -19,49 +21,6 @@ const Portfolio = () => {
     }, 100);
     return () => clearInterval(interval);
   }, [tema]);
-
-  const myProject = [
-    {
-      id: 1,
-      title: "Website Personal",
-      desc: "A modern portfolio website from me to introduce my expertise",
-      img: "/website-personal.png",
-      url: "https://website-five-cyan-50.vercel.app/",
-      tech: ["ReactJS", "TailwindCSS", "Web Storage"],
-    },
-    {
-      id: 2,
-      title: "PUTI Online",
-      desc: "PUTI Online Is a service for informatics engineering students to be able to submit complaints about matters in accordance with the categories on this website.",
-      img: "/puti-online.png",
-      url: "https://mallexibra.github.io/PUTIOnline/",
-      tech: ["HTML", "SCSS"],
-    },
-    {
-      id: 3,
-      title: "Website Portfolio",
-      desc: "Portfolio Website for my own Branding",
-      img: "/mallexibra-website.png",
-      url: "https://mallexibra.github.io/mallexibra-website/",
-      tech: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      id: 4,
-      title: "Bookshelf Apps",
-      desc: "Bookshelf is the final project of a Belajar Membuat Front-End Web untuk Pemula from Dicoding.com",
-      img: "/bookshelf.png",
-      url: "https://mallexibra.github.io/bookshelfApps/",
-      tech: ["HTML", "CSS", "JavaScript", "Web Storage"],
-    },
-    {
-      id: 5,
-      title: "Todo App",
-      desc: "Todo App is a website that can be used to create your todo list.",
-      img: "/image.png",
-      url: "https://todo-app-pearl-tau.vercel.app/",
-      tech: ["ReactJS", "TailwindCSS"],
-    },
-  ];
 
   return (
     <div className={`${tema ? "dark" : ""} scrollbar-hide font-poppins`}>
@@ -79,20 +38,35 @@ const Portfolio = () => {
           <DescriptionPage className='text-slate-900 font-medium my-3'>
             The following is a portfolio of projects that I have worked on
           </DescriptionPage>
-          <div className='flex gap-3 justify-around items-center flex-wrap'>
-            {myProject.map((item) => {
-              return (
-                <Showcase
-                  key={item.id}
-                  title={item.title}
-                  description={item.desc}
-                  img={item.img}
-                  url={item.url}
-                  tech={item.tech}
-                />
-              );
-            })}
+          <div className='w-full flex justify-center items-center gap-5 my-7'>
+            <Link
+              className={`${
+                pathName == "/portfolio/code"
+                  ? "bg-teal-600 text-white"
+                  : "text-teal-600"
+              } border border-teal-600 drop-shadow-md text-sm font-medium py-1 w-32 text-center rounded-md`}
+              to={"code"}
+              onClick={() => {
+                setPathName("/portfolio/code");
+              }}
+            >
+              Code
+            </Link>
+            <Link
+              className={`${
+                pathName == "/portfolio/design"
+                  ? "bg-teal-600 text-white"
+                  : "text-teal-600"
+              } border border-teal-600 drop-shadow-md text-sm font-medium py-1 w-32 text-center rounded-md`}
+              to={"design"}
+              onClick={() => {
+                setPathName("/portfolio/design");
+              }}
+            >
+              Design
+            </Link>
           </div>
+          <Outlet />
         </Container>
       </Wrapper>
       <Footer />
