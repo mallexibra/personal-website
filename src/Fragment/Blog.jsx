@@ -40,13 +40,11 @@ const Blog = () => {
           <div className='w-full flex justify-center items-center gap-5 my-7'>
             <Link
               className={`${
-                pathName == "/blog/journal"
-                  ? "bg-teal-600 text-white"
-                  : "text-teal-600"
+                pathName == "/blog" ? "bg-teal-600 text-white" : "text-teal-600"
               } border border-teal-600 drop-shadow-md text-sm font-medium py-1 w-32 text-center rounded-md`}
-              to={"journal"}
+              to={""}
               onClick={() => {
-                setPathName("/blog/journal");
+                setPathName("/blog");
               }}
             >
               Journal

@@ -41,13 +41,13 @@ const Portfolio = () => {
           <div className='w-full flex justify-center items-center gap-5 my-7'>
             <Link
               className={`${
-                pathName == "/portfolio/code"
+                pathName == "/portfolio"
                   ? "bg-teal-600 text-white"
                   : "text-teal-600"
               } border border-teal-600 drop-shadow-md text-sm font-medium py-1 w-32 text-center rounded-md`}
-              to={"code"}
+              to={""}
               onClick={() => {
-                setPathName("/portfolio/code");
+                setPathName("/portfolio");
               }}
             >
               Code
