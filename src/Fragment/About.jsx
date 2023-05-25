@@ -47,27 +47,27 @@ const About = () => {
   const certification = [
     {
       title: "CSS HackerRank",
-      image: "/csshackerrank.png",
+      image: "/csshackerrank.webp",
       url: "https://www.hackerrank.com/certificates/6c78aac32071",
     },
     {
       title: "Belajar Dasar Pemrograman Web",
-      image: "/dasarweb.png",
+      image: "/dasarweb.webp",
       url: "https://www.dicoding.com/certificates/JMZVG4943ZN9",
     },
     {
       title: "Belajar Dasar Pemrograman Web",
-      image: "/dasarweb.png",
+      image: "/dasarweb.webp",
       url: "https://www.dicoding.com/certificates/JMZVG4943ZN9",
     },
     {
       title: "Belajar Dasar Pemrograman JavaScript",
-      image: "/dasarjs.png",
+      image: "/dasarjs.webp",
       url: "https://www.dicoding.com/certificates/6RPNWKVJRP2M",
     },
     {
       title: "Belajar Membuat Front-End Web untuk Pemula",
-      image: "/frontend.png",
+      image: "/frontend.webp",
       url: "https://www.dicoding.com/certificates/MEPJEWJWWX3V",
     },
   ];

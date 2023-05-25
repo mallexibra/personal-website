@@ -6,7 +6,7 @@ const Design = () => {
       id: 1,
       title: "Logo 8 Forbimwangi",
       desc: "Logo tersebut merupakan logo yang saya buat untuk mengikuti perlombaan Logo Diesnatalis Forbimwangi ke - 8. Alhamdulillah saya mendapatkan Juara 2 :)",
-      img: "/logoForbimwangi.png",
+      img: "/logoForbimwangi.webp",
       url: "-",
       tech: ["Inkscape", "Citramanik"],
     },
