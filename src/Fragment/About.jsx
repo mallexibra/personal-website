@@ -7,6 +7,7 @@ import Footer from "../Layout/Footer";
 import Navbar from "../Layout/Navbar";
 import Wrapper from "../Layout/Wrapper";
 import Journey from "../Layout/Journey";
+import CardBlog from "../Components/CardBlog";
 
 const About = () => {
   const mySkill = [
@@ -40,6 +41,34 @@ const About = () => {
       name: "SMK NEGERI KALIBARU",
       desc: "Teknik Komputer dan Jaringan",
       year: "2019 - 2022",
+    },
+  ];
+
+  const certification = [
+    {
+      title: "CSS HackerRank",
+      image: "/csshackerrank.png",
+      url: "https://www.hackerrank.com/certificates/6c78aac32071",
+    },
+    {
+      title: "Belajar Dasar Pemrograman Web",
+      image: "/dasarweb.png",
+      url: "https://www.dicoding.com/certificates/JMZVG4943ZN9",
+    },
+    {
+      title: "Belajar Dasar Pemrograman Web",
+      image: "/dasarweb.png",
+      url: "https://www.dicoding.com/certificates/JMZVG4943ZN9",
+    },
+    {
+      title: "Belajar Dasar Pemrograman JavaScript",
+      image: "/dasarjs.png",
+      url: "https://www.dicoding.com/certificates/6RPNWKVJRP2M",
+    },
+    {
+      title: "Belajar Membuat Front-End Web untuk Pemula",
+      image: "/frontend.png",
+      url: "https://www.dicoding.com/certificates/MEPJEWJWWX3V",
     },
   ];
 
@@ -121,7 +150,7 @@ const About = () => {
             <Skill
               className={`bg-cyan-600 outline-cyan-400 font-medium animate-pulse`}
             >
-              ReactJS
+              ChakraUI
             </Skill>
           </DescriptionPage>
           <Title
@@ -145,6 +174,19 @@ const About = () => {
               <span className='block absolute w-1 h-[68%] bg-teal-300 left-2'></span>
               {experience.map(({ id, name, desc, year }) => {
                 return <Journey key={id} name={name} desc={desc} year={year} />;
+              })}
+            </div>
+          </DescriptionPage>
+          <Title
+            className='pt-10 pb-3 text-teal-600 drop-shadow-md'
+            text='Certification'
+          />
+          <DescriptionPage>
+            <div className='flex flex-wrap justify-center gap-10'>
+              {certification.map(({ index, title, image, url }) => {
+                return (
+                  <CardBlog key={index} title={title} image={image} url={url} />
+                );
               })}
             </div>
           </DescriptionPage>
