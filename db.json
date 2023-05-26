@@ -1,0 +1,84 @@
+{
+  "mySkill": [
+    { "id": 1, "name": "HTML5" },
+    { "id": 2, "name": "CSS3" },
+    { "id": 3, "name": "SCSS" },
+    { "id": 4, "name": "JavaScript" },
+    { "id": 5, "name": "PHP" },
+    { "id": 6, "name": "MySQL" },
+    { "id": 7, "name": "ReactJS" },
+    { "id": 8, "name": "TailwindCSS" },
+    { "id": 9, "name": "Bootsrap" },
+    { "id": 10, "name": "NodeJS" },
+    { "id": 11, "name": "VSCode" },
+    { "id": 12, "name": "Github" },
+    { "id": 13, "name": "Linux" },
+    { "id": 14, "name": "Figma" },
+    { "id": 15, "name": "Inkscape" },
+    { "id": 16, "name": "Notion" }
+  ],
+
+  "school": [
+    {
+      "id": 1,
+      "name": "POLITEKNIK NEGERI BANYUWANGI",
+      "desc": "D4 Teknologi Rekayasa Perangkat Lunak",
+      "year": "2022 - present"
+    },
+    {
+      "id": 2,
+      "name": "SMK NEGERI KALIBARU",
+      "desc": "Teknik Komputer dan Jaringan",
+      "year": "2019 - 2022"
+    }
+  ],
+
+  "certification": [
+    {
+      "title": "CSS HackerRank",
+      "image": "/csshackerrank.webp",
+      "url": "https://www.hackerrank.com/certificates/6c78aac32071"
+    },
+    {
+      "title": "Belajar Dasar Pemrograman Web",
+      "image": "/dasarweb.webp",
+      "url": "https://www.dicoding.com/certificates/JMZVG4943ZN9"
+    },
+    {
+      "title": "Belajar Dasar Pemrograman Web",
+      "image": "/dasarweb.webp",
+      "url": "https://www.dicoding.com/certificates/JMZVG4943ZN9"
+    },
+    {
+      "title": "Belajar Dasar Pemrograman JavaScript",
+      "image": "/dasarjs.webp",
+      "url": "https://www.dicoding.com/certificates/6RPNWKVJRP2M"
+    },
+    {
+      "title": "Belajar Membuat Front-End Web untuk Pemula",
+      "image": "/frontend.webp",
+      "url": "https://www.dicoding.com/certificates/MEPJEWJWWX3V"
+    }
+  ],
+
+  "experience": [
+    {
+      "id": 1,
+      "name": "PKL Desain Grafis",
+      "desc": "Variant Printing & Offset",
+      "year": "2020 - 2021"
+    },
+    {
+      "id": 2,
+      "name": "Ketua MPK",
+      "desc": "SMK Negeri Kalibaru",
+      "year": "2020 - 2021"
+    },
+    {
+      "id": 3,
+      "name": "Ketua OSIS",
+      "desc": "SMK Negeri Kalibaru",
+      "year": "2019 - 2020"
+    }
+  ]
+}
