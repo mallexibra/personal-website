@@ -7,7 +7,7 @@ const Journey = ({ name, desc, year }) => {
       <div className='text-slate-900'>
         <h1 className='font-bold leading-relaxed'>{name}</h1>
         <div>
-          <p className='inline-block text-xs opacity-50 mr-2  leading-relaxed'>
+          <p className='inline-block text-xs opacity-50 mr-2 leading-relaxed'>
             {year} <span className='font-semibold'>{desc}</span>
           </p>
         </div>
