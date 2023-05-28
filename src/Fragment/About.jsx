@@ -49,13 +49,13 @@ const About = () => {
             text='Skill for Work'
           />
           <DescriptionPage className='flex flex-wrap gap-2'>
-            {skill.map(({ name, id }) => {
+            {skill.map((item, index) => {
               return (
                 <Skill
-                  key={id}
+                  key={index}
                   className={`bg-teal-500 border-2 outline-none border-teal-600 font-medium`}
                 >
-                  {name}
+                  {item}
                 </Skill>
               );
             })}
