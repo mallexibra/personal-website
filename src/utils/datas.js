@@ -166,3 +166,12 @@ export const journal = [
     description: "5 Tips dari saya untuk Programmer Pemula",
   },
 ];
+
+export const book = [
+  {
+    title: "Rekomendasi Tempat Belajar Coding Online",
+    description: "Kamu bisa lihat rekomendasinya, biar kamu gk bingung lagi",
+    writer: "Maulana Malik Ibrahim",
+    url: "#",
+  },
+];
