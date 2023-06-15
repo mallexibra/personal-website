@@ -3,10 +3,10 @@ import { myProject } from "../utils/datas";
 const Code = () => {
   return (
     <div className='flex gap-3 justify-around flex-wrap'>
-      {myProject.map((item) => {
+      {myProject.map((item, index) => {
         return (
           <Showcase
-            key={item.id}
+            key={index}
             title={item.title}
             description={item.desc}
             img={item.img}

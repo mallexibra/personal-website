@@ -84,7 +84,13 @@ export const experience = [
 
 export const myProject = [
   {
-    id: 1,
+    title: "CAFESTUFF",
+    desc: "A website for the rental of goods used for cafe shops",
+    img: "/cafestuff.webp",
+    url: "http://cafestuff.000webhostapp.com/",
+    tech: ["HTML", "TailwindCSS", "PHP", "MySQL"],
+  },
+  {
     title: "Website Personal",
     desc: "A modern portfolio website from me to introduce my expertise",
     img: "/website-personal.webp",
@@ -92,7 +98,6 @@ export const myProject = [
     tech: ["ReactJS", "TailwindCSS", "Web Storage"],
   },
   {
-    id: 2,
     title: "PUTI Online",
     desc: "PUTI Online Is a service for informatics engineering students to be able to submit complaints about matters in accordance with the categories on this website.",
     img: "/puti-online.webp",
@@ -100,7 +105,6 @@ export const myProject = [
     tech: ["HTML", "SCSS"],
   },
   {
-    id: 3,
     title: "Website Portfolio",
     desc: "Portfolio Website for my own Branding",
     img: "/mallexibra-website.webp",
@@ -108,7 +112,6 @@ export const myProject = [
     tech: ["HTML", "CSS", "JavaScript"],
   },
   {
-    id: 4,
     title: "Bookshelf Apps",
     desc: "Bookshelf is the final project of a Belajar Membuat Front-End Web untuk Pemula from Dicoding.com",
     img: "/bookshelf.webp",
@@ -116,7 +119,6 @@ export const myProject = [
     tech: ["HTML", "CSS", "JavaScript", "Web Storage"],
   },
   {
-    id: 5,
     title: "Todo App",
     desc: "Todo App is a website that can be used to create your todo list.",
     img: "/image.webp",
