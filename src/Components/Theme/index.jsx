@@ -4,8 +4,7 @@ const Theme = ({ className, light, dark }) => {
   const [theme, setTheme] = useState(false);
   const handleTheme = () => {
     setTheme(!theme);
-    localStorage.setItem("theme", theme);
-    console.log(theme);
+    localStorage.setItem("theme", !theme);
   };
 
   useEffect(() => {
