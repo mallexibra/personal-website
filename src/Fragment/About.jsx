@@ -97,7 +97,7 @@ const About = () => {
             text='Certification'
           />
           <DescriptionPage>
-            <div className='flex flex-wrap justify-center gap-10'>
+            <div className='flex flex-wrap justify-center gap-3'>
               {certification.map(({ title, image, url }, index) => {
                 return (
                   <CardBlog key={index} title={title} image={image} url={url} />
