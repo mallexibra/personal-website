@@ -30,7 +30,8 @@ const Home = () => {
           <Description />
           <ButtonLink
             primary={false}
-            url={"https://www.youtube.com/@mallexibra/"}
+            url="/cvmallexibra.pdf"
+            download="CV-Mallexibra"
           >
             Get In Touch
           </ButtonLink>

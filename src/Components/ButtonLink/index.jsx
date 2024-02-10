@@ -1,8 +1,9 @@
-const ButtonLink = ({ children = "Link For You", primary, url }) => {
+const ButtonLink = ({ children = "Link For You", primary, url }, props) => {
   return (
     <a
       href={url}
       target='_blank'
+      {...props}
       className={`mx-auto block w-64 text-center font-bold rounded-sm p-3 text-sm ${
         primary
           ? "bg-teal-600 dark:hover:bg-white hover:bg-transparent text-white  hover:text-teal-600 dark:hover:border-white"

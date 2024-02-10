@@ -1,16 +1,12 @@
 export const skill = [
-  "HTML5",
-  "CSS3",
-  "SCSS",
   "JavaScript",
   "PHP",
   "MySQL",
+  "Prisma",
   "ReactJS",
+  "NextJS", "Nuxt 3 JS", "Laravel",
   "TailwindCSS",
   "ChakraUI",
-  "Bootsrap",
-  "NodeJS",
-  "VSCode",
   "Github",
   "Linux",
   "Figma",
@@ -63,26 +59,27 @@ export const certification = [
 
 export const experience = [
   {
-    id: 1,
-    name: "PKL Desain Grafis",
-    desc: "Variant Printing & Offset",
-    year: "2020 - 2021",
-  },
-  {
     id: 2,
-    name: "Ketua MPK",
-    desc: "SMK Negeri Kalibaru",
-    year: "2020 - 2021",
+    name: "Front End Web Developer - Intern",
+    desc: "PT. ASLI ISOAE SOLUSINE",
+    year: "Feb 2024 - Present",
   },
   {
-    id: 3,
-    name: "Ketua OSIS",
-    desc: "SMK Negeri Kalibaru",
-    year: "2019 - 2020",
+    id: 1,
+    name: "Finishing",
+    desc: "Variant Printing & Offset",
+    year: "Jan 2020 - Mar 2020",
   },
 ];
 
 export const myProject = [
+  {
+    title: "Monitoring Kegiatan Desa Pendarungan",
+    desc: "A modern website for recording and monitoring activities in the Pendarungan village government",
+    img:"/monitoring-pendarungan.webp",
+    url: "https://kegiatanpendarungan.id/login",
+    tech: ["NextJS 13", "DaisyUI", "Supabase"]
+  },
   {
     title: "CAFESTUFF",
     desc: "A website for the rental of goods used for cafe shops",

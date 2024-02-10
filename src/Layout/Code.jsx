@@ -2,7 +2,7 @@ import Showcase from "../Components/Showcase";
 import { myProject } from "../utils/datas";
 const Code = () => {
   return (
-    <div className='flex gap-3 justify-around flex-wrap'>
+    <div className='flex gap-3 justify-center flex-wrap'>
       {myProject.map((item, index) => {
         return (
           <Showcase

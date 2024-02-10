@@ -12,10 +12,10 @@ const Showcase = ({
     <a
       href={url}
       target='_blank'
-      className='block outline outline-1 sm:w-2/5 text-slate-800 hover:scale-105 transition-all duration-500 ease-in-out my-3 drop-shadow-xl p-3 rounded-md bg-white outline-teal-600'
+      className='block outline outline-1 sm:w-2/5 text-slate-800 hover:scale-105 transition-all duration-500 ease-in-out drop-shadow-xl p-3 rounded-md bg-white outline-teal-600'
     >
       <div className='rounded-md overflow-hidden '>
-        <img className='block' src={img} alt='Showcase Project' />
+        <img className='block w-full' src={img} alt='Showcase Project' />
       </div>
       <div className='py-3 flex gap-2 flex-wrap'>
         {tech.map((item) => {

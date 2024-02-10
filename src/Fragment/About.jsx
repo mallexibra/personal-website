@@ -37,11 +37,8 @@ const About = () => {
           />
           <DescriptionPage className='leading-relaxed text-slate-900 font-medium'>
             My name is Maulana Malik Ibrahim, You can call me as Malik or
-            Mallexibra. I have name in Social Media as a Mallexibra. I really
-            like website development, especially in the appearance or Frontend
-            Developer. I have Web Development skills like HTML, SCSS, CSS,
-            JavaScript, Jquery, ReactJS, Bootsrap, TailwindCSS PHP, Git, Github.
-            I also have soft skills such as being able to communicate well,
+            Mallexibra. I really like website development, especially in the appearance or Frontend
+            Developer. I also have soft skills such as being able to communicate well,
             working in a team, learning well.
           </DescriptionPage>
           <Title
@@ -68,7 +65,7 @@ const About = () => {
             <Skill
               className={`bg-cyan-600 outline-cyan-400 font-medium animate-pulse`}
             >
-              ChakraUI
+              Nuxt 3
             </Skill>
           </DescriptionPage>
           <Title
@@ -77,7 +74,7 @@ const About = () => {
           />
           <DescriptionPage>
             <div className='flex flex-col gap-y-3 relative justify-center'>
-              <span className='block absolute w-1 h-[70%] bg-teal-300 left-2'></span>
+              <span className='block absolute w-1 h-[68%] bg-teal-300 left-2'></span>
               {school.map(({ id, name, desc, year }) => {
                 return <Journey key={id} name={name} desc={desc} year={year} />;
               })}
@@ -89,7 +86,7 @@ const About = () => {
           />
           <DescriptionPage>
             <div className='flex flex-col gap-y-3 relative justify-center'>
-              <span className='block absolute w-1 h-[68%] bg-teal-300 left-2'></span>
+              <span className='block absolute w-1 h-[66%] bg-teal-300 left-2'></span>
               {experience.map(({ id, name, desc, year }) => {
                 return <Journey key={id} name={name} desc={desc} year={year} />;
               })}
