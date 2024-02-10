@@ -74,7 +74,7 @@ const About = () => {
           />
           <DescriptionPage>
             <div className='flex flex-col gap-y-3 relative justify-center'>
-              <span className='block absolute w-1 h-[68%] bg-teal-300 left-2'></span>
+              <span className='block absolute w-1 h-[57%] bg-teal-300 left-2'></span>
               {school.map(({ id, name, desc, year }) => {
                 return <Journey key={id} name={name} desc={desc} year={year} />;
               })}
